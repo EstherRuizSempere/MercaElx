@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+:root{
+    --complementary: #E88D67;
+    --primary: #134B70;
+    --secondary: #508C9B;
+    --dark: #201E43;
+    --background-light: #F2F9FF;
+    --background-dark: #5A5C5D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Serif", serif;
+}
