@@ -1,16 +1,46 @@
+body{
+    background-color: rgba(80, 140, 155, 0.62);
+
+}
+
+.navegador{
+    background-color: var(--background-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4.5px;
+}
+
+.img-logo{
+    width: 175px;
+    padding: 10px;
+}
+
+.img-iconos{
+    width: 25px;
+}
+
+h1{
+    color: var(--primary) ;
+}
+
+
 main{
+    background-image: url("../images/Elche.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 
 }
 .card{
-    width: 600px;
-    padding: 20px;
+    width: 500px;
+    height: fit-content;
+    padding: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .img-login{
-    width: 50%;
+    width: 150px;
 }
 
 h2{
@@ -20,11 +50,16 @@ h2{
 
     background-color: var(--primary);
     color: var(--background-light);
+    padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
 }
 .boton-formulario:hover{
     background-color: var(--secondary);
     color: var(--background-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+
 }
 
 .forgot-password{
