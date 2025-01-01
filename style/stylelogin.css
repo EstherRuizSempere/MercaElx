@@ -1,12 +1,12 @@
-body{
-    background-color: rgba(80, 140, 155, 0.62);
-
-}
 
 .navegador{
     background-color: var(--background-light);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 4.5px;
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--primary);
 }
 
 .img-logo{
@@ -69,4 +69,36 @@ h2{
 
 .forgot-password:hover{
     color: var(--secondary);
+}
+
+footer{
+    background-color: var(--background-light);
+}
+
+.imagen-footer{
+    width: 150px;
+}
+
+.footer-info{
+    font-size: 0.6em;
+    line-height: 1.4;
+    color: var(--primary);
+}
+
+.footer-enlaces a{
+    text-decoration: none;
+    color: var(--primary);
+    line-height: 2;
+    font-weight: 450;
+}
+
+.footer-enlaces a:hover{
+    color: var(--complementary);
+    font-weight: 500;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.footer-legal{
+    font-size: 0.8em;
 }
