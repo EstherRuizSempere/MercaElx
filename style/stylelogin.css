@@ -73,30 +73,6 @@ footer{
     background-color: var(--background-light);
 }
 
-.imagen-footer{
-    width: 150px;
-}
-
-.footer-info{
-    font-size: 0.6em;
-    line-height: 1.4;
-    color: var(--primary);
-}
-
-.footer-enlaces a{
-    text-decoration: none;
-    color: var(--primary);
-    line-height: 2;
-    font-weight: 450;
-}
-
-.footer-enlaces a:hover{
-    color: var(--complementary);
-    font-weight: 500;
-    transform: scale(1.05);
-    transition: transform 0.2s;
-}
-
 .footer-legal{
     font-size: 0.8em;
 }

@@ -1,0 +1,82 @@
+.navegador {
+    background-color: var(--background-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4.5px;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 0.5rem;
+    --bs-nav-link-padding-y: 0.2rem;
+}
+
+.form-control{
+    border: 0.5px solid var(--primary);
+
+}
+
+.form-control:focus{
+    border: 0.5px solid var(--primary);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.25rem var(--secondary);
+}
+
+
+
+.boton-busqueda{
+    text-align: center;
+    border: 0.5px solid var(--primary);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton-busqueda:hover{
+    background-color: var(--primary);
+    border: 0.5px solid var(--primary);
+    color: var(--background-light);
+    transform: scale(0.8);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary);
+}
+
+.img-logo {
+    width: 175px;
+    padding: 10px;
+
+}
+
+.img-iconos {
+    width: 20px;
+}
+
+
+footer {
+    background-color: var(--background-light);
+}
+
+.imagen-footer {
+    width: 150px;
+}
+
+.footer-info {
+    font-size: 0.6em;
+    line-height: 1.4;
+    color: var(--primary);
+}
+
+.footer-enlaces a {
+    text-decoration: none;
+    color: var(--primary);
+    line-height: 2;
+    font-weight: 450;
+}
+
+.footer-enlaces a:hover {
+    color: var(--complementary);
+    font-weight: 500;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.footer-legal {
+    font-size: 0.8em;
+}
