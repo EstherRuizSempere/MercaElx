@@ -7,23 +7,25 @@
     <link rel="shortcut icon" href="../images/ayuntamiento.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/styleindex.css">
 </head>
 <body>
-<div class="w-100 vh-100 d-flex flex-column" id="contenedor-padre">
+<div class="w-100 d-flex flex-column" id="contenedor-padre">
     <header>
         <nav class="navegador">
             <div class="container-fluid d-flex align-items-center">
                 <div class="row align-items-center w-100">
                     <div class="col-4 d-none d-md-block">
                         <a href="index.html"><img class="img-fluid img-logo"
-                                                                       src="../images/MercaElxLogo.png"
-                                                                       alt="Logo Merca Elx"></a>
+                                                  src="../images/MercaElxLogo.png"
+                                                  alt="Logo Merca Elx"></a>
                     </div>
                     <div class="col-4">
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar comercios" aria-label="Search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar comercios"
+                                   aria-label="Search">
                             <button type="submit" class="btn boton-busqueda"><i class="bi bi-search"></i></button>
                         </form>
                     </div>
@@ -52,6 +54,57 @@
     </header>
 </div>
 
+
+<div class="container" id="container-carousel">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/3.png" class="img-carousel" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/1.png" class="img-carousel" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/4.png" class="img-carousel" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container-fluid" id="container-quienes">
+    <div class="row d-flex align-items-center justify-content-evenly">
+        <div class="col-4 col-md-6 logo-quienes">
+            <img src="../images/quienesSomos.svg" alt="imagen quienes somos">
+        </div>
+        <div class="col-8 col-md-6 texto-quienes">
+            <h1>¿Qué es MercaElx?</h1>
+            <p>MercaElx es una plataforma innovadora diseñada para conectar a los usuarios con los comercios locales de
+                Elche. Nuestro objetivo es promover el comercio de proximidad, facilitando a los negocios un espacio
+                para registrarse y mostrar su oferta, mientras que los usuarios pueden explorar y descubrir tiendas
+                cercanas de forma sencilla. Con MercaElx, apoyamos a la comunidad local, fomentamos la economía de la
+                ciudad y hacemos que el comercio sea más accesible para todos. ¡Únete y forma parte de este movimiento
+                por el comercio local!</p>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container-fluid ">
@@ -87,8 +140,6 @@
         <p>© 2024 Ayuntamiento de Elche. Todos los derechos reservados.</p>
     </div>
 </footer>
-</div>
-
 
 </body>
 </html>

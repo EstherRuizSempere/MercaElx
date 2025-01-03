@@ -1,41 +1,16 @@
-.navegador {
+#contenedor-padre {
     background-color: var(--background-light);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4.5px;
+}
+
+body {
+    background-color: var(--background-light);
 }
 
 .nav {
     --bs-nav-link-padding-x: 0.5rem;
     --bs-nav-link-padding-y: 0.2rem;
-}
-
-.form-control{
-    border: 0.5px solid var(--primary);
-
-}
-
-.form-control:focus{
-    border: 0.5px solid var(--primary);
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.25rem var(--secondary);
-}
-
-
-
-.boton-busqueda{
-    text-align: center;
-    border: 0.5px solid var(--primary);
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.boton-busqueda:hover{
-    background-color: var(--primary);
-    border: 0.5px solid var(--primary);
-    color: var(--background-light);
-    transform: scale(0.8);
-}
-
-.nav-pills .nav-link.active {
-    background-color: var(--primary);
 }
 
 .img-logo {
@@ -48,6 +23,74 @@
     width: 20px;
 }
 
+.form-control {
+    border: 0.5px solid var(--primary);
+
+}
+
+.form-control:focus {
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.25);
+    border-radius: 0.5rem;
+}
+
+.boton-busqueda {
+    text-align: center;
+    border: 0.5px solid var(--primary);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton-busqueda:hover {
+    background-color: var(--secondary);
+    border: 0.5px solid var(--secondary);
+    color: var(--background-light);
+    transform: scale(0.8);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary);
+}
+
+#container-carousel {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.carousel {
+    border-radius: 55px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#container-quienes {
+    padding: 80px 120px 60px 120px;
+
+}
+
+
+#container-quienes img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    margin-left: 120px;
+}
+
+.texto-quienes p {
+    text-align: justify;
+    color: var(--background-dark);
+}
+
+.texto-quienes h1 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: var(--primary);
+}
 
 footer {
     background-color: var(--background-light);
