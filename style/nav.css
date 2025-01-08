@@ -1,0 +1,104 @@
+#contenedor-nav {
+    background-color: var(--background-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4.5px;
+}
+
+.nav {
+    --bs-nav-link-padding-x: 0.5rem;
+    --bs-nav-link-padding-y: 0.2rem;
+    padding-left: 20px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.paginas-nav {
+    padding-right: 20px;
+    padding-top: 4px;
+}
+
+.paginas-nav a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.2em;
+    font-weight: normal;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.paginas-nav a:hover {
+    color: var(--complementary);
+    font-weight: 500;
+    transform: scale(1.02);
+}
+
+.buscador .form-control {
+    border: 0.5px solid var(--primary);
+}
+
+.buscador .form-control:focus {
+    border: 1px solid var(--secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.buscador .boton-busqueda {
+    text-align: center;
+    border: 0.5px solid var(--primary);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.buscador .boton-busqueda:hover {
+    background-color: var(--complementary);
+    border: 0.5px solid var(--complementary);
+    color: var(--primary);
+    transform: scale(0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-nav .nombre-usuario {
+    color: var(--primary);
+}
+
+.user-nav .nombre-usuario b {
+    color: var(--secondary);
+}
+
+.user-nav .nombre-usuario:hover,
+.user-nav .nombre-usuario b:hover {
+    cursor: pointer;
+    color: var(--complementary);
+}
+
+.user-nav .img-iconos {
+    width: 20px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+
+     .navegador{
+        padding: 0 !important;
+    }
+    .nav-item {
+        display: none;
+    }
+
+    .burger-menu {
+        padding-top: 2px;
+        display: inline;
+        font-size: 2.5em;
+    }
+
+    .user-nav {
+        display: none;
+        margin: 0!important;
+        padding: 0 !important;
+    }
+
+
+}

@@ -1,57 +1,7 @@
-#contenedor-padre {
-    background-color: var(--background-light);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4.5px;
-}
-
 body {
     background-color: var(--background-light);
 }
 
-.nav {
-    --bs-nav-link-padding-x: 0.5rem;
-    --bs-nav-link-padding-y: 0.2rem;
-}
-
-.img-logo {
-    width: 175px;
-    padding: 10px;
-
-}
-
-.img-iconos {
-    width: 20px;
-}
-
-.form-control {
-    border: 0.5px solid var(--primary);
-
-}
-
-.form-control:focus {
-    border: 1px solid var(--secondary);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-}
-
-.boton-busqueda {
-    text-align: center;
-    border: 0.5px solid var(--primary);
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.boton-busqueda:hover {
-    background-color: var(--complementary);
-    border: 0.5px solid var(--complementary);
-    color: var(--primary);
-    transform: scale(0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-.nav-pills .nav-link.active {
-    background-color: var(--primary);
-}
 
 #container-carousel {
     width: 100%;
@@ -63,7 +13,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
 }
 
-
 .carousel-item img {
     width: 100%;
     height: 500px;
@@ -71,15 +20,14 @@ body {
 }
 
 #container-quienes {
-margin-top: 75px;
+    margin-top: 75px;
+    padding: 90px;
 }
-
 
 #container-quienes img {
     width: 100%;
     max-width: 400px;
     object-fit: cover;
-    margin-left: 120px;
 }
 
 .texto-quienes p {
@@ -93,65 +41,37 @@ margin-top: 75px;
     color: var(--primary);
 }
 
-#container-card{
+#container-card {
     padding-top: 50px;
     border-radius: 15px;
-
+    padding-bottom: 85px;
 }
-.card-title{
+
+.card-title {
     text-align: center;
     color: var(--primary);
     padding: 20px;
 }
-.card-text strong{
+
+.card-text strong {
     color: var(--complementary);
 }
 
-.card-text{
+.card-text {
     padding: 0 100px 0 100px;
 }
-.card-text p{
+
+.card-text p {
     text-align: justify;
 }
 
-.ayuntamiento-mapa{
+.ayuntamiento-mapa {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
 }
 
-.ayuntamiento-mapa iframe{
+.ayuntamiento-mapa iframe {
     border-radius: 50px;
 }
 
-footer {
-    background-color: var(--background-light);
-}
-
-.imagen-footer {
-    width: 150px;
-}
-
-.footer-info {
-    font-size: 0.6em;
-    line-height: 1.4;
-    color: var(--primary);
-}
-
-.footer-enlaces a {
-    text-decoration: none;
-    color: var(--primary);
-    line-height: 2;
-    font-weight: 450;
-}
-
-.footer-enlaces a:hover {
-    color: var(--complementary);
-    font-weight: 500;
-    transform: scale(1.05);
-    transition: transform 0.2s;
-}
-
-.footer-legal {
-    font-size: 0.8em;
-}
