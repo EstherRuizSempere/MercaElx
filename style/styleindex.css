@@ -30,7 +30,7 @@ body {
 
 .form-control:focus {
     border: 1px solid var(--secondary);
-    box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
 
@@ -41,10 +41,12 @@ body {
 }
 
 .boton-busqueda:hover {
-    background-color: var(--secondary);
-    border: 0.5px solid var(--secondary);
-    color: var(--background-light);
+    background-color: var(--complementary);
+    border: 0.5px solid var(--complementary);
+    color: var(--primary);
     transform: scale(0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .nav-pills .nav-link.active {
@@ -69,8 +71,7 @@ body {
 }
 
 #container-quienes {
-    padding: 80px 120px 60px 120px;
-
+margin-top: 75px;
 }
 
 
@@ -90,6 +91,37 @@ body {
     text-align: center;
     padding-bottom: 15px;
     color: var(--primary);
+}
+
+#container-card{
+    padding-top: 50px;
+    border-radius: 15px;
+
+}
+.card-title{
+    text-align: center;
+    color: var(--primary);
+    padding: 20px;
+}
+.card-text strong{
+    color: var(--complementary);
+}
+
+.card-text{
+    padding: 0 100px 0 100px;
+}
+.card-text p{
+    text-align: justify;
+}
+
+.ayuntamiento-mapa{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.ayuntamiento-mapa iframe{
+    border-radius: 50px;
 }
 
 footer {
