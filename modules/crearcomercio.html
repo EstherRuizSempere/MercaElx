@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/nav.css">
-    <link rel="stylesheet" href="../style/stylecomercio.css">
+    <link rel="stylesheet" href="../style/crearcomercio.css">
     <link rel="stylesheet" href="../style/footer.css">
 
 </head>
@@ -72,95 +72,61 @@
     </header>
 </div>
 
-<main class="container py-4">
-    <div class="boton-comercio py-3">
-        <a href="crearcomercio.html" class="btn btn-primary btn-floating">
-            <i class="bi bi-plus"></i> Crear Comercio
-        </a>
+
+
+<div class="container-padre-form px-5">
+    <div class="container-contacto mx-4 mx-md-auto my-5 p-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item index"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item index"><a href="comercios.html">Comercios</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Crear Comercio</li>
+            </ol>
+        </nav>
+        <h1 class="mb-0">Crear Comercio</h1>
+
+        <form class="form position-relative">
+            <div class="row g-4 mb-6">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label text-white">Nombre</label>
+                    <input type="text" class="form-control" id="nombre"  maxlength="70" placeholder="Introduce tu nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="ubicacion" class="form-label text-white">Ubicación</label>
+                    <input type="text" class="form-control" id="ubicacion" placeholder="Introduce la dirección">
+                </div>
+
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-2">
+                    <label class="form-label text-white">Tipo de comercio</label>
+                    <select class="form-select" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option>Restauración</option>
+                        <option>Moda</option>
+                        <option>Servicios</option>
+                        <option>Alimentación</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-white">Foto del comercio</label>
+                    <input type="file" class="form-control" accept="image/*">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-white">Descripción</label>
+                <textarea class="form-control" rows="3" maxlength="300" placeholder="Describe el comercio" required></textarea>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-light px-4 py-2 rounded-pill">Crear comercio</button>
+        </form>
     </div>
-
-    <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/zapateria.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Zapatería Ruiz</h5>
-                    <p class="card-text text-truncate">Zapatería tradicional con más de 50 años en Elche.</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/teteria.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Cafetería Central</h5>
-                    <p class="card-text text-truncate">Cafetería y tetería en la Plaza de Baix.</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/libreria.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Librería Vera</h5>
-                    <p class="card-text text-truncate">Todo en libros y papelería.</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/protein.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Farmacia 24h</h5>
-                    <p class="card-text text-truncate">Servicio farmacéutico 24 horas.</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/maquillaje.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Maquilleo</h5>
-                    <p class="card-text text-truncate">Todos tus productos top en maquillaje</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="../images/merceria.png" class="card-img-top" alt="Comercio">
-                <div class="card-body">
-                    <h5 class="card-title">Mercerías Loli</h5>
-                    <p class="card-text text-truncate">Todo en material de costura</p>
-                    <button class="btn btn-primary w-100">Editar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <nav aria-label="Navegación de páginas" class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#">Anterior</a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Siguiente</a>
-            </li>
-        </ul>
-    </nav>
-</main>
+</div>
 
 <footer>
     <div class="container-fluid ">

@@ -1,0 +1,45 @@
+body{
+    background-color: var(--background-light);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+.card-title{
+    color: var(--primary);
+}
+
+.card-text{
+    color: var(--background-dark) ;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--background-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--complementary);
+    border-color: var(--complementary);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgba(80, 140, 155, 0.18);
+    border-color: transparent;
+}
+
+.pagination .page-link {
+    color: var(--primary);
+}
+
+.page-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1024px) {
+    .container { padding: 15px; }
+    .card { margin-bottom: 15px; }
+}
