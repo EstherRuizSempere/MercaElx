@@ -70,3 +70,28 @@ footer {
     color: var(--background-light);
     background-color: var(--primary);
 }
+
+@media (max-width: 1024px) {
+    .footer-info, .footer-enlaces {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .footer-info {
+        order: 1;
+        text-align: left;
+    }
+
+    .footer-enlaces {
+        order: 2;
+        text-align: right;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .footer-enlaces a {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,56 @@
+.container-padre-form{
+    background-color: var(--background-light);
+
+}
+.container-contacto {
+    position: relative;
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+.container-contacto h1 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 8rem;
+    font-weight: bold;
+    z-index: 0;
+}
+
+.form-control {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    color: var(--background-light) !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--background-light);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-light{
+    background-color: var(--secondary);
+    color: var(--background-light);
+}
+
+.btn-light:hover{
+    background-color: var(--complementary);
+    color: var(--background-light);
+}
+
+@media (max-width: 1024px) {
+    .container-contacto h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-contacto h1 {
+        font-size: 3.5rem;
+    }
+}
